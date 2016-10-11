@@ -18,5 +18,12 @@ namespace Abstraccion
             //throw new NotImplementedException();
             return 100f;
         }
+
+        //propiedad
+
+        public override string Modelo()
+        {
+            return "94";
+        }
     }
 }

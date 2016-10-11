@@ -25,5 +25,20 @@ namespace Abstraccion
         {
             return CalcularCosto();
         }
+
+        //propiedad
+
+         public override string Modelo()
+         {
+             //throw new NotImplementedException();
+             return "99";
+         }
+
+        //de interface
+         public float RetornarCuit()
+         {
+             return 23395553457;
+         }
+
     }
 }

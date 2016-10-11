@@ -31,19 +31,38 @@ namespace Abstraccion
             miLista.Add(micarreta);
             miLista.Add(miDeportivo);
 
+            Console.WriteLine("Vehiculo");
+
             foreach (Vehiculo item in miLista)
             {
                 Console.WriteLine(item.CalcularCosto());
             }
 
+
+
             listaIafip.Add(miAvion);
             listaIafip.Add(miDeportivo);
+            Console.WriteLine("\nIafip");
 
             foreach (Iafip item in listaIafip)
             {
                 Console.WriteLine(item.RetornarImpuesto());
             }
 
+
+
+            //1- Implementar MostrarIafip()
+            //2- Verificar si la implementacion se hereda o no. Crear clases hijas de avion, Privada/Comercial. (La implementacion de l interfaz se hereda, privado y comercial seria ahora Iafip)
+            //3- Crear Propiedades
+            //-abstractas
+            //-virtuales
+            //-en la interfaz
+
+            Console.WriteLine("\nGestion");
+            foreach (Iafip item in listaIafip)
+            {
+                Console.WriteLine(Gestion.MostrarIMP(item));
+            }
 
             Console.ReadKey();
 

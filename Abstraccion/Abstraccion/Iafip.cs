@@ -8,11 +8,18 @@ namespace Abstraccion
 {
     public interface Iafip
     {
+        //no se instancia y no tiene atributos.
         /// <summary>
         /// reglas
         /// </summary>
         /// <returns></returns>
         float RetornarImpuesto();
+
+        //propiedad
+
+        float RetornarCuit();
+
+
         
 
     }

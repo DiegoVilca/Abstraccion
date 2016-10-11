@@ -10,10 +10,7 @@ namespace Abstraccion
     {
         public int cantPuertas;
 
-        public Auto()
-        {
-
-        }
+        
 
         public Auto(string patente, int cantPuertas) :base(patente)
         {
@@ -38,9 +35,20 @@ namespace Abstraccion
         }
 
 
+        //propiedad abstracta
+
+        public abstract string Modelo();
 
 
-        
+        public override void Marca()
+        {
+            Console.WriteLine("Peugeot");
+        }
+
+        public override string Fabricante()
+        {
+            return base.Fabricante();
+        }
         
     }
 }

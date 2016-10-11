@@ -13,10 +13,6 @@ namespace Abstraccion
 
         //constructor
 
-        public Vehiculo()
-        {
-
-        }
 
         public Vehiculo(string patente)
         {
@@ -28,6 +24,7 @@ namespace Abstraccion
 
 
         //METODO VIRTUAL
+        //Puede o no implementarse
 
         public virtual string MostrarDatos()
         {
@@ -45,13 +42,24 @@ namespace Abstraccion
 
         //METODOS ABSTRACTOS    
         //1- los metodos abstractos solo estan en clases abstractas.
-        //2- No tiene implementacion.
+        //2- No tiene implementacion en la clase que se define.
         //3- Son obligatorias de implementar en su herencia DIRECTA.
         //4- Las clases abstractas no se pueden instancia (por constructor).
 
 
         public abstract float CalcularCosto();
         
+
+        //Propiedad abstracta
+
+        public abstract void Marca();
+
+        //Metodo virtual
+
+        public virtual string Fabricante()
+        {
+            return "Japon";
+        }
 
 
     }

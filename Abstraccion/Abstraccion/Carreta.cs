@@ -19,5 +19,17 @@ namespace Abstraccion
             //throw new NotImplementedException();
             return 5f;
         }
+
+        //propiedad 
+
+        public override void Marca()
+        {
+            Console.WriteLine("Fiat");
+        }
+
+        public override string Fabricante()
+        {
+            return "Italia";
+        }
     }
 }

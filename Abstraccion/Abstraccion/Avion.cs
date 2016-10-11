@@ -24,5 +24,23 @@ namespace Abstraccion
         {
             return CalcularCosto();
         }
+
+        //propiedad 
+
+        public override void Marca()
+        {
+            Console.WriteLine("Boing");
+        }
+
+        public override string Fabricante()
+        {
+            return "Alemania";
+        }
+
+        //De interface
+        public float RetornarCuit()
+        {
+            return 5433555987;
+        }
     }
 }
