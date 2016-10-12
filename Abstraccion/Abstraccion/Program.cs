@@ -22,6 +22,8 @@ namespace Abstraccion
             Deportivo miDeportivo = new Deportivo("123rty", 4);
             Carreta micarreta = new Carreta("yyyyy");
             Avion miAvion = new Avion("jhgjhg");
+            Privado miAvionPrivado = new Privado("654987");
+            Comercial miAvionComercial = new Comercial("lalalaa");
 
             List<Vehiculo> miLista = new List<Vehiculo>();
             List<Iafip> listaIafip = new List<Iafip>();
@@ -42,6 +44,8 @@ namespace Abstraccion
 
             listaIafip.Add(miAvion);
             listaIafip.Add(miDeportivo);
+            listaIafip.Add(miAvionPrivado);
+            listaIafip.Add(miAvionComercial);
             Console.WriteLine("\nIafip");
 
             foreach (Iafip item in listaIafip)
@@ -49,10 +53,13 @@ namespace Abstraccion
                 Console.WriteLine(item.RetornarImpuesto());
             }
 
+            //miAvionPrivado hereda los metodos y propiedades de interface que posee avion. 
+             Console.WriteLine(miAvionPrivado.RetornarCuit());
 
+            
 
             //1- Implementar MostrarIafip()
-            //2- Verificar si la implementacion se hereda o no. Crear clases hijas de avion, Privada/Comercial. (La implementacion de l interfaz se hereda, privado y comercial seria ahora Iafip)
+            //2- Verificar si la implementacion se hereda o no. Crear clases hijas de avion, Privada/Comercial. (La implementacion de la interfaz se hereda, privado y comercial seria ahora Iafip)
             //3- Crear Propiedades
             //-abstractas
             //-virtuales

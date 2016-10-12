@@ -20,10 +20,7 @@ namespace Abstraccion
 
 
 
-        public float RetornarImpuesto()
-        {
-            return CalcularCosto();
-        }
+        
 
         //propiedad 
 
@@ -41,6 +38,11 @@ namespace Abstraccion
         public float RetornarCuit()
         {
             return 5433555987;
+        }
+
+        public float RetornarImpuesto()
+        {
+            return CalcularCosto();
         }
     }
 }

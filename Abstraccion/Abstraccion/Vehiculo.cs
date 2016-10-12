@@ -24,7 +24,7 @@ namespace Abstraccion
 
 
         //METODO VIRTUAL
-        //Puede o no implementarse
+        //Puede o no implementarse, el implementarse implica que se debe sobreescribir (override).
 
         public virtual string MostrarDatos()
         {
@@ -42,15 +42,15 @@ namespace Abstraccion
 
         //METODOS ABSTRACTOS    
         //1- los metodos abstractos solo estan en clases abstractas.
-        //2- No tiene implementacion en la clase que se define.
+        //2- No tiene implementacion en la clase que se define (solo se define la firma).
         //3- Son obligatorias de implementar en su herencia DIRECTA.
-        //4- Las clases abstractas no se pueden instancia (por constructor).
+        //4- Las clases abstractas no se pueden instanciar (por constructor).
 
 
-        public abstract float CalcularCosto();
+        public abstract float CalcularCosto(); 
         
 
-        //Propiedad abstracta
+        //Metodo abstracto
 
         public abstract void Marca();
 
